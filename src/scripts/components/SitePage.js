@@ -69,8 +69,8 @@ export default class ProfilePage extends Component {
           </p>
           <h2 className="page__sub-title">さいごに</h2>
           <p className="page__description">
-          これからも、このサイトのような「魔法の世界」や「おとぎ話」のような世界観のWebサイトやアプリケーションを作っていきます。<br />
-          ぜひ、お楽しみに。
+            これからも、このサイトのような「魔法の世界」や「おとぎ話」のような世界観のWebサイトやアプリケーションを作っていきます。<br />
+            ぜひ、お楽しみに。
           </p>
           <section className="page__space"></section>
         </div>

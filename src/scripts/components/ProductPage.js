@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import products from '../config/product'
+import products from '../config/product.json'
 
 export default class ProfilePage extends Component {
   componentDidMount() {
@@ -12,21 +12,30 @@ export default class ProfilePage extends Component {
   render() {
     return (
       <article className="page product-page">
-        <div className="page__bg"></div>
+        <div className="page__bg" />
         <div className="page__decoration">
-          <div></div><div></div><div></div><div></div>
+          <div />
+          <div />
+          <div />
+          <div />
         </div>
-        <div className="page__frame"></div>
+        <div className="page__frame" />
         <div className="page__inner">
           <section className="page__title">
-            <div></div>
+            <div />
           </section>
-          <section className="page__project"></section>
+          <section className="page__project" />
           <h2 className="page__sub-title top">アプリ・Webサービスなど</h2>
           <section className="product-page__content">
             {products.app.map((app, key) => {
               return (
-                <a className="content" href={app.link} key={key} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="content"
+                  href={app.link}
+                  key={key}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="inner">
                     <img src={app.thumb} alt={app.name} />
                     <h4 className="title">{app.name}</h4>
@@ -42,7 +51,13 @@ export default class ProfilePage extends Component {
           <section className="product-page__content">
             {products.design.map((design, key) => {
               return (
-                <a className="content" href={design.link} key={key} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="content"
+                  href={design.link}
+                  key={key}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="inner">
                     <img src={design.thumb} alt={design.name} />
                     <h4 className="title">{design.name}</h4>
@@ -58,7 +73,13 @@ export default class ProfilePage extends Component {
           <section className="product-page__content">
             {products.works.map((work, key) => {
               return (
-                <a className="content" href={work.link} key={key} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="content"
+                  href={work.link}
+                  key={key}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="inner">
                     <img src={work.thumb} alt={work.name} />
                     <h4 className="title">{work.name}</h4>
@@ -74,7 +95,13 @@ export default class ProfilePage extends Component {
           <section className="product-page__content">
             {products.matome.map((img, key) => {
               return (
-                <a className="content" href={img.link} key={key} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="content"
+                  href={img.link}
+                  key={key}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="inner">
                     <img src={img.thumb} alt={img.name} />
                     <h4 className="title">{img.name}</h4>
@@ -90,7 +117,13 @@ export default class ProfilePage extends Component {
           <section className="product-page__content">
             {products.illust.map((img, key) => {
               return (
-                <a className="content" href={img.link} key={key} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="content"
+                  href={img.link}
+                  key={key}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="inner">
                     <img src={img.thumb} alt={img.name} />
                     <h4 className="title">{img.name}</h4>
@@ -106,7 +139,13 @@ export default class ProfilePage extends Component {
           <section className="product-page__content">
             {products.lib.map((lib, key) => {
               return (
-                <a className="content" href={lib.link} key={key} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="content"
+                  href={lib.link}
+                  key={key}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="inner">
                     <img src={lib.thumb} alt={lib.name} />
                     <h4 className="title">{lib.name}</h4>
@@ -122,7 +161,13 @@ export default class ProfilePage extends Component {
           <section className="product-page__content">
             {products.movie.map((movie, key) => {
               return (
-                <a className="content" href={movie.link} key={key} target="_blank" rel="noopener noreferrer">
+                <a
+                  className="content"
+                  href={movie.link}
+                  key={key}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="inner">
                     <img src={movie.thumb} alt={movie.name} />
                     <h4 className="title">{movie.name}</h4>
@@ -134,10 +179,11 @@ export default class ProfilePage extends Component {
             })}
           </section>
 
-          <section className="page__space"></section>
+          <section className="page__space" />
         </div>
         <Link to="/" className="page__close-btn">
-          <div></div><div></div>
+          <div />
+          <div />
         </Link>
       </article>
     )

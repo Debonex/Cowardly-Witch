@@ -8,7 +8,7 @@ import Version5 from '../containers/Version5'
 import Version6 from '../containers/Version6'
 import LastChapter from '../containers/LastChapter'
 
-export default ({ chapter, description }) => {
+export default function ({ chapter, description }) {
   if (chapter === 'Prologue') {
     console.log('> 臆病な魔女_')
   }

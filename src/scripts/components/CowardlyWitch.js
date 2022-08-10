@@ -6,14 +6,16 @@ import SitePage from '../containers/SitePage'
 import ProductPage from '../containers/ProductPage'
 import MemoriesPage from '../containers/MemoriesPage'
 
-export default () => (
-  <Router>
-    <div className="cowardly-witch">
-      <Route exact path="/" component={Home} />
-      <Route exact path="/profile" component={ProfilePage} />
-      <Route exact path="/site" component={SitePage} />
-      <Route exact path="/product" component={ProductPage} />
-      <Route exact path="/memories" component={MemoriesPage} />
-    </div>
-  </Router>
-)
+export default function () {
+  return (
+    <Router>
+      <div className="cowardly-witch">
+        <Route exact path="/" component={Home} />
+        <Route exact path="/profile" component={ProfilePage} />
+        <Route exact path="/site" component={SitePage} />
+        <Route exact path="/product" component={ProductPage} />
+        <Route exact path="/memories" component={MemoriesPage} />
+      </div>
+    </Router>
+  )
+}

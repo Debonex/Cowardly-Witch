@@ -5,16 +5,17 @@ const chapter = 'Prologue'
 const description = config[chapter]
 const init = {
   chapter,
-  description
+  description,
 }
 
 export default (state = init, action) => {
   switch (action.type) {
     case CHANGE_CHAPTER:
-      return Object.assign({}, state, {
+      return {
+        ...state,
         chapter: action.payload.chapter,
-        description: action.payload.description
-      })
+        description: action.payload.description,
+      }
     default:
       return state
   }
